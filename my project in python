@@ -1,0 +1,97 @@
+import psutil
+import os
+print('Help для помощи')
+
+##f2
+while True:
+      a1 = input("")
+##f11
+      def ldr():
+          sw1 = os.listdrives()
+          print(sw1)
+##f7
+      def ext():
+          os._exit(n)
+##f10
+      def cpus():
+          d1 = os.cpu_count()
+          print('кол-во вычислительных ядер :' , d1)
+##f9
+      def cz():
+          ss = input("расположение и имя файла для просмотра его веса в байтах :" )
+          tt = os.stat(ss)
+          print('  Size:', tt.st_size)
+##f5
+      def rm(a4):
+          os.remove(a4,  dir_fd=None)
+##F6
+      def asu():
+          os.renames(old, new)
+
+      def ors():
+          os.rename(g1, h1)
+##f3
+      def fl(folder_name):
+             os.makedirs(folder_name, exist_ok=True)
+
+
+      def wmn():
+          print('текущая дериктория  :',  os.getcwd())
+##f8
+      def cpr():
+          print([p.name() for p in psutil.process_iter()])
+
+##f1
+      def Help():
+          print('wmn - показать текущую дерикторию')
+          print('fl - создать папку')
+          print('ors - переместить файл или папку из одного места в другое')
+          print("asu - для изменения имени файла или папки ")
+          print("ext - для выхода из приложения")
+          print('cpr - для просмотра всех запущенных процессов')
+          print("cz - для просмотра веса файла в байтах")
+          print("cpus - для просмотра сколько в вашем пк вычислительных ядер")
+          print("ldr - для просмотра какие есть диски в пк ")
+##f1
+      if a1 == "Help":
+         Help()
+##f2
+      if a1 == "wmn":
+         wmn()
+##f3
+      if a1 == "fl":
+         folder_name = input('имя папки :')
+         fl(folder_name)
+
+##f4
+      if a1 == "ors":
+          g1 = input('расположение файла : ')
+          h1 = input('куда хотите переместить файл : ')
+          ors()
+##f5
+      if a1 == "rm":
+          a4 = input('расположение файла для его удаления :' )
+          rm(a4)
+##f6
+      if a1 == "asu":
+          old = input("старый путь к файлу для его изменения :")
+          new = input("новый путь к файлу или старый путь к файлу и измененное имя :")
+          asu()
+##f7
+      if a1 == "ext":
+          ext()
+##f8
+      if a1 == "cpr":
+          cpr()
+##f9
+      if a1 == "cz":
+          cz()
+##f10
+      if a1 == "cpus":
+          cpus()
+##f11
+      if a1 == "ldr":
+          ldr()
+
+
+##comment I created this to study libraries, I have this application in an exe file, this application looks like a command line, that's all I could tell you, I don't know what else to tell you :)
